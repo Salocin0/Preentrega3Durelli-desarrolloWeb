@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.colorbg{
+    background-color: #508EED;
+}
+.colorw{
+    background-color: #ffff;
+}
+
+.cont-imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.cont-imagen img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+

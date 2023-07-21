@@ -1,0 +1,93 @@
+// Definición de variables (opcional)
+$color-primary: #508EED;
+$color-white: #ffffff;
+
+// Estilos globales
+* {
+  padding: 0;
+  margin: 0;
+}
+
+// Clases de colores
+.colorbg {
+  background-color: $color-primary;
+}
+
+.colorw {
+  background-color: $color-white;
+}
+
+// Contenedor de imagen
+.cont-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+a {
+    text-decoration: none;
+}
+
+.divbotonessobremi{
+    height: 100px;
+}
+
+.divtitulo{
+    height: 250px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  // Estilo para cada tarjeta dentro del contenedor
+  .card-container div {
+    width: 250px; // Ancho fijo de 250px
+    height: 250px; // Altura fija de 300px
+    flex: 0 0 auto; // Permitir que las tarjetas mantengan su tamaño fijo
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background-color: #ccc;
+  
+    // Estilo para la imagen dentro de la tarjeta
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px 15px 0 0;
+      object-fit:cover;
+    }
+  
+    // Estilo para el título del proyecto dentro de la tarjeta
+    h3 {
+      margin-top: 10px;
+      color: black;
+    }
+  }
+    
+  .center-outer-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+  }
+  
+  .rad-img{
+    border-radius: 15px;
+  }
+
+  .bodyback{
+    background-color: aqua;
+  }

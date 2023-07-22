@@ -10,14 +10,29 @@ $color-white: #ffffff;
 
 // Clases de colores
 .colorbg {
-  background-color: $color-primary;
+  //background-color: $color-primary;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,34,85,1) 10%, rgba(34,60,121,1) 20%, rgba(53,94,169,1) 30%, rgba(64,114,197,1) 40%, rgba(80,142,237,1) 50%, rgba(59,160,242,1) 60%, rgba(53,166,244,1) 70%, rgba(38,178,247,1) 80%, rgba(27,188,249,1) 90%, rgba(14,199,252,1) 100%);
+
 }
+  .tituloclaro{
+    color: white;
+  }
 
 .colorw {
   background-color: $color-white;
 }
 
-// Contenedor de imagen
+.img-back-inicio {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('../img/altumcode-dMUt0X3f59Q-unsplash.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 100%;
+    color: white;
+  }
+
+  
 .cont-imagen {
   display: flex;
   align-items: center;
@@ -39,7 +54,7 @@ a {
 }
 
 .divtitulo{
-    height: 250px;
+    height: 200px;
 }
 
 .card-container {
@@ -58,7 +73,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #ccc;
   
     // Estilo para la imagen dentro de la tarjeta
@@ -82,12 +97,147 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
+    background-color: #303443;
+    color: white;
   }
   
   .rad-img{
     border-radius: 15px;
+    
   }
 
-  .bodyback{
-    background-color: aqua;
+  section {
+    footer.fixed-bottom {
+      div{
+        background-color: #303443 !important;
+        color: white !important;
+      }
+    }
   }
+
+  .navbar {
+    background-color: #303443 !important;
+    padding: 10px;
+  
+    a.nav-link {
+      color: white !important;
+      text-decoration: none;
+      font-weight: normal;
+      display: inline-block;
+      position: relative;
+      border-radius: 20px;
+  
+      &:hover {
+        background: $color-primary;
+        border-radius: 20px;
+      }
+    }
+  }
+  
+  @keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+.btn:hover{
+    animation: myAnim 3s linear 0s infinite normal none;
+    background: #39BA94;
+    border: none;
+    border: 1px solid black;
+}
+
+.btn{
+    background: #39BA94;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.divimgcontacto{
+    height: 200px;
+}
+
+.imgbackground{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .center-outer-container {
+      top: calc(50% - 25px);
+      max-height: calc(100vh - 200px); 
+      overflow-y: auto;
+    }
+    .letraclara{
+        color: white;
+    }
+  }
+
+
+  /* Estilos para tamaños de pantalla menores a 992px */
+@media (max-width: 991px) {
+    .card-img-top {
+        height: 150px; /* Altura de la imagen en pantalla de 768px */
+      }
+      .cont-imagen {
+          height: 150px; /* Altura de la imagen en pantalla de 768px */
+        }
+      .card {
+          height: 370px;
+      }
+  }
+  
+  /* Estilos para tamaños de pantalla menores a 768px */
+  @media (max-width: 767px) {
+    .card-img-top {
+        height: 120px; /* Altura de la imagen en pantalla de 768px */
+      }
+      .cont-imagen {
+          height: 120px; /* Altura de la imagen en pantalla de 768px */
+        }
+      .card {
+          height: 400px;
+      }
+  }
+  
+  /* Estilos para tamaños de pantalla menores a 425px */
+  @media (max-width: 424px) {
+    .card-img-top {
+      height: 80px; /* Altura de la imagen en pantalla de 768px */
+    }
+    .cont-imagen {
+        height: 80px; /* Altura de la imagen en pantalla de 768px */
+      }
+    .card {
+        height: 470px;
+    }
+  }
+  

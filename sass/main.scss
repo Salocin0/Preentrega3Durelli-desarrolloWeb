@@ -1,16 +1,11 @@
-// Definición de variables (opcional)
 $color-primary: #508EED;
-$color-white: #ffffff;
 
-// Estilos globales
 * {
   padding: 0;
   margin: 0;
 }
 
-// Clases de colores
 .colorbg {
-  //background-color: $color-primary;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,34,85,1) 10%, rgba(34,60,121,1) 20%, rgba(53,94,169,1) 30%, rgba(64,114,197,1) 40%, rgba(80,142,237,1) 50%, rgba(59,160,242,1) 60%, rgba(53,166,244,1) 70%, rgba(38,178,247,1) 80%, rgba(27,188,249,1) 90%, rgba(14,199,252,1) 100%);
 
@@ -20,7 +15,7 @@ $color-white: #ffffff;
   }
 
 .colorw {
-  background-color: $color-white;
+  background-color: white;
 }
 
 .img-back-inicio {
@@ -64,11 +59,10 @@ a {
     justify-content: center;
   }
   
-  // Estilo para cada tarjeta dentro del contenedor
   .card-container div {
-    width: 250px; // Ancho fijo de 250px
-    height: 250px; // Altura fija de 300px
-    flex: 0 0 auto; // Permitir que las tarjetas mantengan su tamaño fijo
+    width: 250px; 
+    height: 250px; 
+    flex: 0 0 auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,15 +70,13 @@ a {
     border-radius: 15px;
     background-color: #ccc;
   
-    // Estilo para la imagen dentro de la tarjeta
     img {
       width: 100%;
       height: 100%;
       border-radius: 15px 15px 0 0;
       object-fit:cover;
     }
-  
-    // Estilo para el título del proyecto dentro de la tarjeta
+
     h3 {
       margin-top: 10px;
       color: black;
@@ -202,39 +194,39 @@ a {
   }
 
 
-  /* Estilos para tamaños de pantalla menores a 992px */
+ 
 @media (max-width: 991px) {
     .card-img-top {
-        height: 150px; /* Altura de la imagen en pantalla de 768px */
+        height: 150px; 
       }
       .cont-imagen {
-          height: 150px; /* Altura de la imagen en pantalla de 768px */
+          height: 150px; 
         }
       .card {
           height: 370px;
       }
   }
   
-  /* Estilos para tamaños de pantalla menores a 768px */
+
   @media (max-width: 767px) {
     .card-img-top {
-        height: 120px; /* Altura de la imagen en pantalla de 768px */
+        height: 120px; 
       }
       .cont-imagen {
-          height: 120px; /* Altura de la imagen en pantalla de 768px */
+          height: 120px;
         }
       .card {
           height: 400px;
       }
   }
   
-  /* Estilos para tamaños de pantalla menores a 425px */
+
   @media (max-width: 424px) {
     .card-img-top {
-      height: 80px; /* Altura de la imagen en pantalla de 768px */
+      height: 80px; 
     }
     .cont-imagen {
-        height: 80px; /* Altura de la imagen en pantalla de 768px */
+        height: 80px; 
       }
     .card {
         height: 470px;

@@ -1,33 +1,40 @@
+//VARIABLES
 $color-primary: #508EED;
 
+//RESET
 * {
   padding: 0;
   margin: 0;
 }
 
+//GRADIENTE DE FONDO
 .colorbg {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,34,85,1) 10%, rgba(34,60,121,1) 20%, rgba(53,94,169,1) 30%, rgba(64,114,197,1) 40%, rgba(80,142,237,1) 50%, rgba(59,160,242,1) 60%, rgba(53,166,244,1) 70%, rgba(38,178,247,1) 80%, rgba(27,188,249,1) 90%, rgba(14,199,252,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(20, 34, 85, 1) 10%, rgba(34, 60, 121, 1) 20%, rgba(53, 94, 169, 1) 30%, rgba(64, 114, 197, 1) 40%, rgba(80, 142, 237, 1) 50%, rgba(59, 160, 242, 1) 60%, rgba(53, 166, 244, 1) 70%, rgba(38, 178, 247, 1) 80%, rgba(27, 188, 249, 1) 90%, rgba(14, 199, 252, 1) 100%);
 
 }
-  .tituloclaro{
-    color: white;
-  }
 
+//TITULOS BLANCOS
+.tituloclaro {
+  color: white;
+}
+
+//FONDOS BLANCOS
 .colorw {
   background-color: white;
 }
 
+//DISEÑO IMAGEN INICIO
 .img-back-inicio {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('../img/indexbackground.jpg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center center; 
-    width: 100%;
-    color: white;
-  }
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('../img/indexbackground.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  color: white;
+}
 
-  
+//CONTENEDORES DIV QUE TENGAN IMAGENES
 .cont-imagen {
   display: flex;
   align-items: center;
@@ -40,196 +47,215 @@ $color-primary: #508EED;
     object-fit: contain;
   }
 }
+
+//FORMATEO ETIQUETA A
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.divbotonessobremi{
-    height: 100px;
+//ALTO DIV SOBRE MI
+.divbotonessobremi {
+  height: 100px;
 }
 
-.divtitulo{
-    height: 200px;
+//ALTO DIV TITULO
+.divtitulo {
+  height: 200px;
 }
 
+//FORMATEO CARD CONTAINER
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-  }
-  
-  .card-container div {
-    width: 250px; 
-    height: 250px; 
-    flex: 0 0 auto; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 15px;
-    background-color: #ccc;
-  
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 15px 15px 0 0;
-      object-fit:cover;
-    }
-
-    h3 {
-      margin-top: 10px;
-      color: black;
-    }
-  }
-    
-  .center-outer-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
-    background-color: #303443;
-    color: white;
-  }
-  
-  .rad-img{
-    border-radius: 15px;
-    
-  }
-
-  section {
-    footer.fixed-bottom {
-      div{
-        background-color: #303443 !important;
-        color: white !important;
-      }
-    }
-  }
-
-  .navbar {
-    background-color: #303443 !important;
-    padding: 10px;
-  
-    a.nav-link {
-      color: white !important;
-      text-decoration: none;
-      font-weight: normal;
-      display: inline-block;
-      position: relative;
-      border-radius: 20px;
-  
-      &:hover {
-        background: $color-primary;
-        border-radius: 20px;
-      }
-    }
-  }
-  
-  @keyframes myAnim {
-	0%,
-	100% {
-		transform: rotate(0deg);
-		transform-origin: 50% 50%;
-	}
-
-	10% {
-		transform: rotate(8deg);
-	}
-
-	20%,
-	40%,
-	60% {
-		transform: rotate(-10deg);
-	}
-
-	30%,
-	50%,
-	70% {
-		transform: rotate(10deg);
-	}
-
-	80% {
-		transform: rotate(-8deg);
-	}
-
-	90% {
-		transform: rotate(8deg);
-	}
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
-.btn:hover{
-    animation: myAnim 3s linear 0s infinite normal none;
-    background: #39BA94;
-    border: none;
-    border: 1px solid black;
-}
+//FORMATEO CONTENIDO DE LOS CARD CONTEINER
+.card-container div {
+  width: 250px;
+  height: 250px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 15px;
+  background-color: #ccc;
 
-.btn{
-    background: #39BA94;
-    border: none;
-    border-radius: 20px;
-    border: 1px solid black;
-}
-
-.divimgcontacto{
-    height: 200px;
-}
-
-.imgbackground{
+  img {
     width: 100%;
     height: 100%;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
+  }
+
+  h3 {
+    margin-top: 10px;
+    color: black;
+  }
+}
+
+//DISEÑO FORM CONTACTO
+.center-outer-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  background-color: #303443;
+  color: white;
+}
+
+//BORDE IMG
+.rad-img {
+  border-radius: 15px;
+
+}
+
+//DISEÑO FOOTER
+section {
+  footer.fixed-bottom {
+    div {
+      background-color: #303443 !important;
+      color: white !important;
+    }
+  }
+}
+
+//DISEÑO NAVBAR
+.navbar {
+  background-color: #303443 !important;
+  padding: 10px;
+
+  a.nav-link {
+    color: white !important;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    position: relative;
+    border-radius: 20px;
+
+    &:hover {
+      background: $color-primary;
+      border-radius: 20px;
+    }
+  }
+}
+
+//ANIMACION BOTONES
+@keyframes myAnim {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  10% {
+    transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(-8deg);
+  }
+
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+//DISEÑO BOTONES HOVER
+.btn:hover {
+  animation: myAnim 3s linear 0s infinite normal none;
+  background: #39BA94;
+  border: none;
+  border: 1px solid black;
+}
+
+//DISEÑO BOTONES HOVER
+.btn {
+  background: #39BA94;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+//ALTURA DIV CONTACTO
+.divimgcontacto {
+  height: 200px;
+}
+
+//DISEÑO IMG FONDO
+.imgbackground {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+//CONFIGURACIONES RESPONSIVE
+@media (max-width: 767px) {
+  .center-outer-container {
+    top: calc(50% - 25px);
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+
+  .letraclara {
+    color: white;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-img-top {
+    height: 150px;
+  }
+
+  .cont-imagen {
+    height: 150px;
+  }
+
+  .card {
+    height: 370px;
+  }
 }
 
 @media (max-width: 767px) {
-    .center-outer-container {
-      top: calc(50% - 25px);
-      max-height: calc(100vh - 200px); 
-      overflow-y: auto;
-    }
-    .letraclara{
-        color: white;
-    }
+  .card-img-top {
+    height: 120px;
   }
 
-
- 
-@media (max-width: 991px) {
-    .card-img-top {
-        height: 150px; 
-      }
-      .cont-imagen {
-          height: 150px; 
-        }
-      .card {
-          height: 370px;
-      }
+  .cont-imagen {
+    height: 120px;
   }
-  
 
-  @media (max-width: 767px) {
-    .card-img-top {
-        height: 120px; 
-      }
-      .cont-imagen {
-          height: 120px;
-        }
-      .card {
-          height: 400px;
-      }
+  .card {
+    height: 400px;
   }
-  
+}
 
-  @media (max-width: 424px) {
-    .card-img-top {
-      height: 80px; 
-    }
-    .cont-imagen {
-        height: 80px; 
-      }
-    .card {
-        height: 470px;
-    }
+@media (max-width: 424px) {
+  .card-img-top {
+    height: 80px;
   }
-  
+
+  .cont-imagen {
+    height: 80px;
+  }
+
+  .card {
+    height: 470px;
+  }
+}
